@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alinhando div</title>
+
+  <style>
+    .quadrado {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+
+      /* Até aqui eu só criei o quadrado */
+
+      margin: auto;
+
+      /* 
+      Com o margin auto eu centralizei meu quadrado,
+      isso só funcionou pq uma div já é display:block. 
+      */
+
+    }
+
+    .img-curso {
+      /* Definindo o tamanho da imagem */
+      width: 100px;
+      height: 100px;
+
+      /* Tentando centralizar com margin:auto */
+      margin: auto;
+      /* Não funciona, a tag <img> tem como padrão display:inline */
+
+      /* Alterando para display:block, dessa forma vai funcionar */
+      display: block;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="quadrado">
+
+  </div>
+
+  <img class="img-curso" src="./logo_curso_dev.png">
+
+</body>
+
+</html>
