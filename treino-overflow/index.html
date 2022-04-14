@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treino overflow</title>
+
+  <style>
+    .container {
+      margin: auto;
+      width: 100px;
+      height: 150px;
+      border: 1px solid black;
+
+      /* criando o overflow no eixo y */
+      overflow-y: scroll;
+      /* escondendo scroll no eixo x */
+      overflow-x: hidden;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      list-style: none;
+      width: 90px;
+      height: 150px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <ul>
+      <li style="background-color: brown;"></li>
+      <li style="background-color: blue;"></li>
+      <li style="background-color: red;"></li>
+      <li style="background-color: pink;"></li>
+    </ul>
+  </div>
+</body>
+
+</html>
