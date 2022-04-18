@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fixed</title>
+
+  <style>
+    .caixa {
+      width: 500px;
+      height: 4000px;
+      border: 1px solid black;
+      /* 
+      definindo position:relative para que os elementos filho 
+      sejam relativos a posição dele
+      */
+      position: relative;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .quadrado {
+      width: 100px;
+      height: 100px;
+    }
+
+    .quadrado-red {
+      background-color: red;
+    }
+
+    .quadrado-blue {
+      background-color: blue;
+
+      /* O position padrão dos elementos é o static */
+
+      /* 
+      com o position: fixed podemos fixar um elemento na página.
+      Um bom exemplo são os balões de chat que ficam sempre posicionados
+      na parte inferior direta/esquerda dos sites, e mesmo que rolarmos a página
+      para baixo, o chat continua na mesma posição, FIXA.
+      */
+      position: fixed;
+      bottom: 200px;
+      right: 0px;
+
+    }
+
+    .quadrado-green {
+      background-color: green;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="caixa">
+    <ul>
+      <li class="quadrado quadrado-red"></li>
+      <li class="quadrado quadrado-blue"></li>
+      <li class="quadrado quadrado-green"></li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
