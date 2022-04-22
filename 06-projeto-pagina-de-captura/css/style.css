@@ -74,7 +74,7 @@ select {
   background-position-y: center; */
 }
 
-footer {
+.campo-palestrante {
   background-color: #202121;
   padding: 40px;
   text-align: center;
@@ -99,4 +99,15 @@ footer {
 
 .description h3 {
   font-size: 24px;
+}
+
+footer {
+  color: white;
+  font-size: .6rem;
+  padding: 10px;
+  text-align: center;
+}
+
+footer b {
+  color: #48C5CE;
 }
