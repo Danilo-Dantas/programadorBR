@@ -16,3 +16,6 @@ var a = "Texto string" // String
 var b = 3              // Number
 var c                  // Undefined
 var d = null           // Null
+var e = true           // Boolean (true ou false)
+
+console.log(b)
